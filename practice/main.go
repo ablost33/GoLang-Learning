@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"flag"
+	"fmt"
+	"github.com/ablost33/GoLang-Learning/practice/crypto"
+)
 
 /* @TODO: Answer the following
 1. Do I need my project path to be the same as the github path?
@@ -24,15 +28,14 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	myQueue := Queue{}
-	myQueue.enqueue(1)
-	myQueue.enqueue(2)
-	myQueue.enqueue(3)
-	myQueue.printQueue()
-	myQueue.dequeue()
-	fmt.Println()
-	myQueue.printQueue()
-	myQueue.dequeue()
-	fmt.Println()
-	myQueue.printQueue()
+	nameOfCrypto := flag.String(
+		"crypto", "BTC", "Input the name of the CryptoCurrency you would like to know the price of",
+	)
+	flag.Parse()
+
+	crypto, err := crypto.GetCryptoInfo(*nameOfCrypto)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(crypto)
 }
