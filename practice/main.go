@@ -1,10 +1,6 @@
 package main
 
-import (
-	"flag"
-	"fmt"
-	"github.com/ablost33/GoLang-Learning/practice/crypto"
-)
+import "github.com/ablost33/GoLang-Learning/practice/json"
 
 /* @TODO: Answer the following
 1. Do I need my project path to be the same as the github path?
@@ -28,14 +24,5 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	nameOfCrypto := flag.String(
-		"crypto", "BTC", "Input the name of the CryptoCurrency you would like to know the price of",
-	)
-	flag.Parse()
-
-	crypto, err := crypto.GetCryptoInfo(*nameOfCrypto)
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println(crypto)
+	json.MarshalToFile()
 }

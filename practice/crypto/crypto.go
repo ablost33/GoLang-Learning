@@ -2,6 +2,7 @@ package crypto
 
 import (
 	"encoding/json"
+	"flag"
 	"fmt"
 	"net/http"
 )
@@ -16,17 +17,17 @@ type CryptoCurrency struct {
 
 /* @TODO: See how to convert supply and PriceUsd to another float*/
 type CryptoData struct {
-	Name     string `json:"name"`
-	Symbol   string `json:"symbol"`
-	Supply   string `json:"supply"`
-	PriceUsd string `json:"priceUsd"`
+	Name     string  `json:"name"`
+	Symbol   string  `json:"symbol"`
+	Supply   float64 `json:"supply"`
+	PriceUsd float64 `json:"priceUsd"`
 }
 
 func (c CryptoCurrency) stringify() string {
 	return fmt.Sprintf("Name: %s\nSymbol: %s\nSupply: %s\nPriceUsd: %s\n", c.Data.Name, c.Data.Symbol, c.Data.Supply, c.Data.PriceUsd)
 }
 
-func GetCryptoInfo(currency string) (string, error) {
+func getCryptoInfo(currency string) (string, error) {
 	url := baseURL + currency
 	httpRes, err := http.Get(url)
 	if err != nil {
@@ -39,4 +40,17 @@ func GetCryptoInfo(currency string) (string, error) {
 		return "", err
 	}
 	return cryptoCurrency.stringify(), nil
+}
+
+func Commander() {
+	nameOfCrypto := flag.String(
+		"crypto", "BTC", "Input the name of the CryptoCurrency you would like to know the price of",
+	)
+	flag.Parse()
+
+	crypto, err := getCryptoInfo(*nameOfCrypto)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(crypto)
 }
