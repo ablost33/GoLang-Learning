@@ -21,8 +21,3 @@ func (p *Person) MarshalJSON() ([]byte, error) {
 		Email:       strings.Repeat("*", 4) + "@mail.com",
 	})
 }
-
-func (p *Person) MarshalJSON() ([]byte, error) {
-	var PersonAlias *Person
-	PersonAlias.Email = strings.Repeat("*", 4) + "@mail.com"
-}
