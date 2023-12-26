@@ -6,6 +6,8 @@ import (
 	"os"
 )
 
+// Used this: https://blog.logrocket.com/using-json-go-guide/
+
 type Seller struct {
 	Id          int    `json:"id"`
 	Name        string `json:"name"`

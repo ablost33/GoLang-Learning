@@ -1,6 +1,6 @@
 package main
 
-import "github.com/ablost33/GoLang-Learning/practice/json"
+import "github.com/ablost33/GoLang-Learning/practice/string_manipulation"
 
 /* @TODO: Answer the following
 1. Do I need my project path to be the same as the github path?
@@ -24,5 +24,5 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	json.MarshalToFile()
+	string_manipulation.ReplaceMatchedContent()
 }
