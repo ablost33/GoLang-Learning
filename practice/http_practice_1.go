@@ -88,6 +88,8 @@ func httpPOST() error {
 	if err != nil {
 		return err
 	}
+	defer httpRes.Body.Close()
+
 	cleanResponse := string(byteRes)
 	fmt.Println("Response is:\n", cleanResponse)
 

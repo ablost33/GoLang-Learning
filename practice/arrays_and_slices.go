@@ -8,27 +8,28 @@ import "fmt"
 	- How to print all the elements of array quick
 */
 
-func createFixedSizeArray(len int) [3]int {
+func CreateFixedSizeArray() [3]int {
 	a := [...]int{1, 2, 3}
 	a[2] = 69
-	fmt.Println("Modified the array at index 1 to have value:", a[1])
+	fmt.Println("BEFORE, a is:", a)
 
+	// This creates a pointer to a, so whatever you modify in b will also affect a
 	b := &a
 	b[1] = 0
 
 	// Notice you can pass an array directly into fmt.Println
 	fmt.Println("a is:", a)
-	fmt.Println(0, "b is:", b)
+	fmt.Println("b is:", b)
 
 	return a
 }
 
 /*
-	Key slice concepts:
-	- a[start:end], ex: b := a[1:3], will create a slice from index start to index end-1
-	- A slice does not own any data of its own. It is just a representation of the underlying array. See ex with theArray
+Key slice concepts:
+- a[start:end], ex: b := a[1:3], will create a slice from index start to index end-1
+- A slice does not own any data of its own. It is just a representation of the underlying array. See ex with theArray
 */
-func createFlexibleSizeSlice() []float64 {
+func CreateFlexibleSizeSlice() []float64 {
 	a := []float64{1.0332, 1.2009, 1.43543, 4.432, 4.5}
 	b := a[1:3]
 
@@ -67,7 +68,7 @@ func practiceStuff() {
 }
 
 /*
-	See this useful link for different ways to delete: https://golangprojectstructure.com/removing-elements-from-slice-array/
+See this useful link for different ways to delete: https://golangprojectstructure.com/removing-elements-from-slice-array/
 */
 func deleteFromSlice[T any](slice *[]T, index int) {
 	if index < 0 || index >= len(*slice) {
