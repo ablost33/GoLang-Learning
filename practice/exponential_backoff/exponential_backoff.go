@@ -10,6 +10,8 @@ import (
 	"time"
 )
 
+/* Source: https://medium.com/@kdthedeveloper/golang-http-retries-fbf7abacbe27 */
+
 const (
 	RetryCount = 3
 	baseURL    = "https://api.coincap.io/v2/assets/"

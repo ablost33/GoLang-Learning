@@ -26,5 +26,5 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	exponential_backoff.CallCoinexAPI()
+	exponential_backoff.UpdateUser("Tim Newmane", "Writer")
 }

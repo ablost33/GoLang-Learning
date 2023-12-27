@@ -37,3 +37,8 @@ func (crypto *CoinData) UnmarshalJSON(data []byte) error {
 	}
 	return nil
 }
+
+type Person struct {
+	Name  string `json:"name"`
+	Email string `json:"email"`
+}
