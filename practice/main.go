@@ -1,5 +1,7 @@
 package main
 
+import "github.com/ablost33/GoLang-Learning/practice/crypto"
+
 /* @TODO: Answer the following
 1. Do I need my project path to be the same as the github path?
 2. Do I need to initialize all my projects in the go directory? I'm inclined to say no because of the go mod tool
@@ -22,5 +24,5 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	CreateFlexibleSizeSlice()
+	crypto.GetFinancialData()
 }

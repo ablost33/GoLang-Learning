@@ -87,3 +87,15 @@ func UnMarshalFile() error {
 	fmt.Sprintf("Windows", windows)
 	return nil
 }
+
+type TokenHolder struct {
+	Tokens []string `json:"tokens"`
+}
+
+func UnMarshalArrayTwo() error {
+	jay := `{"tokens": ["one", "two"]}`
+	var holder TokenHolder
+	json.Unmarshal([]byte(jay), &holder)
+	fmt.Println(holder)
+	return nil
+}
