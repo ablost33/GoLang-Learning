@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/ablost33/GoLang-Learning/practice/exponential_backoff"
-)
+import "github.com/ablost33/GoLang-Learning/practice/csv_practice"
 
 /* @TODO: Answer the following
 1. Do I need my project path to be the same as the github path?
@@ -26,5 +24,5 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	exponential_backoff.UpdateUser("Tim Newmane", "Writer")
+	csv_practice.OpenFile()
 }
