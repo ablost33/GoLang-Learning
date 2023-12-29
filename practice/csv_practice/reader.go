@@ -10,7 +10,7 @@ import (
 	Ressource: https://earthly.dev/blog/golang-csv-files/
 */
 
-func OpenFile() {
+func ReadFile() {
 	file, err := os.Open("/Users/alexblostein/desktop/practice.csv")
 	if err != nil {
 		fmt.Println(err)
