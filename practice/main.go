@@ -24,5 +24,5 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	csv_practice.OpenFile()
+	csv_practice.ReadFile()
 }
