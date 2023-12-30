@@ -7,7 +7,7 @@ import (
 )
 
 /*
-	Ressource: https://earthly.dev/blog/golang-csv-files/
+	Resource: https://earthly.dev/blog/golang-csv-files/
 */
 
 func ReadFile() {

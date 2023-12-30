@@ -1,6 +1,8 @@
 package main
 
-import "github.com/ablost33/GoLang-Learning/practice/csv_practice"
+import (
+	"github.com/ablost33/GoLang-Learning/practice/csv_practice"
+)
 
 /* @TODO: Answer the following
 1. Do I need my project path to be the same as the github path?
@@ -24,5 +26,5 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	csv_practice.ReadFile()
+	csv_practice.GoCSVWriteToFile()
 }
