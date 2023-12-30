@@ -26,5 +26,5 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	csv_practice.GoCSVWriteToFile()
+	csv_practice.JSONToCSV()
 }

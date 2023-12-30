@@ -32,3 +32,19 @@ func WriteFile() {
 		writer.Write(row)
 	}
 }
+
+func AppendToFile() {
+	file, err := os.OpenFile(filepath, os.O_APPEND|os.O_WRONLY, 0644)
+	if err != nil {
+		fmt.Println(err)
+	}
+	defer file.Close()
+
+	writer := csv.NewWriter(file)
+	defer writer.Flush()
+
+	rowToAdd := []string{"Bobert", "55", "Male"}
+	if err := writer.Write(rowToAdd); err != nil {
+		panic(err)
+	}
+}

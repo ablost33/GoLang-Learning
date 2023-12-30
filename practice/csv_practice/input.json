@@ -1,0 +1,12 @@
+[
+  {
+    "width": 500,
+    "height": 200,
+    "title": "Hello Go!"
+  },
+  {
+    "width": 321,
+    "height": 500,
+    "title": "Bye Go!"
+  }
+]

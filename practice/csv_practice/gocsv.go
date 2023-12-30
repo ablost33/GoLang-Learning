@@ -42,5 +42,12 @@ func GoCSVReadFile() {
 	}
 	defer file.Close()
 
-	gocsv.Unmarshal(file)
+	person := []Person{}
+	if err := gocsv.Unmarshal(file, &person); err != nil {
+		fmt.Println(err)
+	}
+
+	for _, peep := range person {
+		fmt.Println("Person is: ", peep)
+	}
 }
