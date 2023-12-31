@@ -30,3 +30,13 @@ func ModifyCharacterAtIndex(word string) {
 	byteArray[2] = 'w'
 	fmt.Println(string(byteArray))
 }
+
+func ExperimentWithSplit() {
+	arr := "one, two, three, four"
+
+	/* This output: [one  two  three  four] */
+	fmt.Println("Split is: ", strings.Split(arr, ","))
+
+	/* This output: [one,  two,  three,  four]*/
+	fmt.Println("SplitAfter is: ", strings.SplitAfter(arr, ","))
+}
