@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/ablost33/GoLang-Learning/practice/csv_practice"
+	"github.com/ablost33/GoLang-Learning/practice/exponential_backoff"
 )
 
 /* @TODO: Answer the following
@@ -26,5 +26,5 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	csv_practice.JSONToCSV()
+	exponential_backoff.LoadAndPOST()
 }
