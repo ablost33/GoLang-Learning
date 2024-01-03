@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/ablost33/GoLang-Learning/practice/transaction"
+	"github.com/ablost33/GoLang-Learning/practice/http_practice"
 )
 
 /* @TODO: Answer the following
@@ -26,5 +26,5 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	transaction.LoadAndAnalyze()
+	http_practice.MakeGetRequest()
 }
