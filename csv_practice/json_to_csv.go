@@ -9,7 +9,7 @@ import (
 
 const (
 	jsonFilePath   = "./csv_practice/input.json"
-	outputFilePath = "./csv_practice/output.csv"
+	outputFilePath = "./csv_practice/test.csv"
 )
 
 func JSONToCSV() {

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/ablost33/GoLang-Learning/practice/http_practice"
+	"github.com/ablost33/GoLang-Learning/http_practice"
 )
 
 /* @TODO: Answer the following
