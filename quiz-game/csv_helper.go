@@ -19,8 +19,8 @@ func readCSV(filepath string) ([][]string, error) {
 		return nil, err
 	}
 
-	stringifiedData := string(rawData)
-	return cleanData(stringifiedData)
+	stringdData := string(rawData)
+	return cleanData(stringdData)
 }
 
 func cleanData(data string) ([][]string, error) {
