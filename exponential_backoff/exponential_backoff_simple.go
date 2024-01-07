@@ -27,7 +27,7 @@ func retryFunction(operation httpOperation) (*http.Response, error) {
 		timeSpan := time.Duration(math.Pow(2, float64(i))) * time.Second
 		time.Sleep(timeSpan)
 	}
-	return nil, errors.New("Operation failed after all attempts.")
+	return nil, errors.New("operation failed after all attempts")
 }
 
 func shouldRetryFunc(response *http.Response, err error) bool {
