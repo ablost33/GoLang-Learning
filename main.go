@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/ablost33/GoLang-Learning/http_practice"
+	html_scraping "github.com/ablost33/GoLang-Learning/html-scraping"
 )
 
 /* @TODO: Answer the following
@@ -26,5 +26,5 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	http_practice.MakeGetRequest()
+	html_scraping.ParseWebPage()
 }
