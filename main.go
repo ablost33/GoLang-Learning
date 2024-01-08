@@ -26,5 +26,5 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	html_scraping.ParseWebPage()
+	html_scraping.GPTmain()
 }

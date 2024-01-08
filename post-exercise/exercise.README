@@ -1,0 +1,2 @@
+Ask chatGPT to generate a CSV of transaction data. Then practice grouping that data by spend category, calculate average per category,
+and then POST it to an endpoint
