@@ -1,7 +1,7 @@
 package main
 
 import (
-	html_scraping "github.com/ablost33/GoLang-Learning/html-scraping"
+	"github.com/ablost33/GoLang-Learning/csv_n_post"
 )
 
 /* @TODO: Answer the following
@@ -26,5 +26,5 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	html_scraping.GPTmain()
+	csv_n_post.Run()
 }
