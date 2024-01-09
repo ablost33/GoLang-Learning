@@ -1,0 +1,11 @@
+TransactionID,Amount,Type,Description
+1,50,Groceries,"Purchased fruits and vegetables"
+2,150,Utilities,"Electricity bill payment"
+3,70,Groceries,"Bought bread, milk"
+4,200,Entertainment,"Movie tickets for Avengers"
+5,120,Utilities,"Gas bill"
+6,45,Groceries,"Purchased cereals and eggs"
+7,250,Entertainment,"Concert tickets"
+8,130,Utilities,"Water bill payment"
+9,60,Groceries,"Bought snacks and drinks"
+10,190,Entertainment,"Online subscription service"
