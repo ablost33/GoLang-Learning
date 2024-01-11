@@ -1,0 +1,18 @@
+TransactionID,Product,Category,Quantity,Price
+001,Alpha 10,Electronics,2,250
+002,Beta Juice,Beverages,5,15
+003,Gamma Trousers - Discount,Apparel,3,50
+004,Omega Spices Offer,Food,10,5
+005,Epsilon Chargers,Electronics,4,30
+006,,Beverages,7,8  # Missing product name
+007,Eta Computer Discount,Electronics,1,500
+008,Theta Bread,Food,,2  # Missing quantity
+009,Iota Headphones Offer,Electronics,5,80
+010,Kappa Shirts,Apparel,6,40
+011,Lambda Shoes - Offer,Apparel,2,100
+012,Mu Watches,Electronics,3,150
+013,Nu Socks,Apparel,10,5
+014,Xi Laptops,Electronics,-2,1000  # Negative quantity
+015,Omicron Medicine,,4,20  # Missing category
+016,Pi Water, ,6,30  # Extra spaces in category
+,Delta Paper,Office,12,3  # Missing TransactionID
