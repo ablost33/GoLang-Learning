@@ -1,7 +1,7 @@
 package main
 
 import (
-	exercise_jan10 "github.com/ablost33/GoLang-Learning/exercise-jan10"
+	exercise_jan11 "github.com/ablost33/GoLang-Learning/exercise-jan11"
 )
 
 /* @TODO: Answer the following
@@ -26,5 +26,5 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	exercise_jan10.Run()
+	exercise_jan11.PostUser()
 }
