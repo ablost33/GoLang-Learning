@@ -22,28 +22,22 @@ func PostUser() error {
 	if err != nil {
 		return err
 	}
-	buffer := bytes.NewBuffer(reqBody)
 
-	client := http.Client{}
-	req, err := http.NewRequest("POST", url, buffer)
+	postOp := func(url string) (response *http.Response, err error) {
+		buffer := bytes.NewBuffer(reqBody)
+		client := http.Client{}
+		req, err := http.NewRequest("POST", url, buffer)
+		if err != nil {
+			return nil, err
+		}
+		return client.Do(req)
+	}
+
+	res, err := callWithRetry(postOp, url)
 	if err != nil {
+		println(err)
 		return err
 	}
-	res, err := client.Do(req)
-
-	//postOp := func(url string) (response *http.Response, err error) {
-	//	client := http.Client{}
-	//	req, err := http.NewRequest("POST", url, buffer)
-	//	if err != nil {
-	//		return nil, err
-	//	}
-	//	return client.Do(req)
-	//}
-	//
-	//res, err := callWithRetry(postOp, url)
-	//if err != nil {
-	//	println(err)
-	//}
 
 	byteResponse, err := io.ReadAll(res.Body)
 	if err != nil {
@@ -75,7 +69,8 @@ func callWithRetry(aFunc httpReq, url string) (response *http.Response, err erro
 func shouldRetry(errorCode int) bool {
 	if errorCode == http.StatusBadGateway ||
 		errorCode == http.StatusServiceUnavailable ||
-		errorCode == http.StatusInternalServerError {
+		errorCode == http.StatusInternalServerError ||
+		errorCode == http.StatusBadRequest {
 		return true
 	}
 	return false
