@@ -15,7 +15,7 @@ const (
 	maxAttempt = 5
 )
 
-func PostUser() error {
+func PostUserWithClient() error {
 	data := `{"name":"bagman","job":"leader"}`
 
 	reqBody, err := json.Marshal(data)
@@ -24,7 +24,7 @@ func PostUser() error {
 	}
 
 	postOp := func(url string) (response *http.Response, err error) {
-		buffer := bytes.NewBuffer(reqBody)
+		buffer := bytes.NewReader(reqBody)
 		client := http.Client{}
 		req, err := http.NewRequest("POST", url, buffer)
 		if err != nil {
