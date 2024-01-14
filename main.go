@@ -26,5 +26,5 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	exercise_jan11.PostUser()
+	exercise_jan11.DeleteUser()
 }
