@@ -1,4 +1,4 @@
-package main
+package data_structures
 
 import "fmt"
 
@@ -62,7 +62,7 @@ func practiceStuff() {
 	slice1 = append(slice1, 2)
 	slice1 = append(slice1, 3)
 	fmt.Println("Slice1 before: ", slice1)
-	deleteFromSlice(&slice1, 3)
+	DeleteFromSlice(&slice1, 3)
 	fmt.Println("Slice1 after: ", slice1)
 	fmt.Println(slice1)
 }
@@ -70,7 +70,7 @@ func practiceStuff() {
 /*
 See this useful link for different ways to delete: https://golangprojectstructure.com/removing-elements-from-slice-array/
 */
-func deleteFromSlice[T any](slice *[]T, index int) {
+func DeleteFromSlice[T any](slice *[]T, index int) {
 	if index < 0 || index >= len(*slice) {
 		return
 	}

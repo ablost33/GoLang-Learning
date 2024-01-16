@@ -1,7 +1,8 @@
 package main
 
 import (
-	exercise_jan11 "github.com/ablost33/GoLang-Learning/exercise-jan11"
+	"fmt"
+	"github.com/ablost33/GoLang-Learning/data_structures"
 )
 
 /* @TODO: Answer the following
@@ -26,5 +27,7 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	exercise_jan11.DeleteUser()
+	mySlice := []string{"one", "two", "three", "four"}
+	data_structures.DeleteFromSlice(&mySlice, 1)
+	fmt.Println(mySlice)
 }
