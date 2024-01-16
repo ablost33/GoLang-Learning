@@ -72,3 +72,18 @@ func ReplaceMatchedContent() {
 	fmt.Println(replaced)
 	fmt.Println(replaced2)
 }
+
+func CaseInsensitiveMatching() {
+	pattern := `(?i)hello`
+	r, err := regexp.Compile(pattern)
+	if err != nil {
+		fmt.Println("Error compiling regex:", err)
+		return
+	}
+
+	fmt.Println(r.MatchString("Hello world")) // true
+	fmt.Println(r.MatchString("hello world")) // true
+	fmt.Println(r.MatchString("HeLlO world")) // true
+	fmt.Println(r.MatchString("HELLO world")) // true
+	fmt.Println(r.MatchString("goodbye world"))
+}
