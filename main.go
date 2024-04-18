@@ -1,8 +1,7 @@
 package main
 
 import (
-	"fmt"
-	"github.com/ablost33/GoLang-Learning/data_structures"
+	http_practice_2 "github.com/ablost33/GoLang-Learning/random_exercises/http-practice-2"
 )
 
 /* @TODO: Answer the following
@@ -27,7 +26,9 @@ interdependencies, do: go run main.go arrays_and_slices.go
 */
 
 func main() {
-	mySlice := []string{"one", "two", "three", "four"}
-	data_structures.DeleteFromSlice(&mySlice, 1)
-	fmt.Println(mySlice)
+	inputJob := &http_practice_2.Job{
+		Name: "Jay Sean",
+		Job:  "International Superstar",
+	}
+	http_practice_2.PutJobData(inputJob)
 }
