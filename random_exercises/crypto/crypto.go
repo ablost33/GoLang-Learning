@@ -15,7 +15,6 @@ type CryptoCurrency struct {
 	Data CryptoData `json: "data"`
 }
 
-/* @TODO: See how to convert supply and PriceUsd to another float*/
 type CryptoData struct {
 	Name     string  `json:"name"`
 	Symbol   string  `json:"symbol"`

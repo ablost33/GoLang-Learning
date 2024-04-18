@@ -1,0 +1,51 @@
+Date,Transaction Type,Category,Amount,Merchant,Location
+2023-10-13,Deposit,Electronics,673.49,Fresh Market,Chicago
+2023-10-14,Deposit,Utilities,348.41,Movie Hub,Los Angeles
+2023-10-16,Purchase,Utilities,806.75,Clothing Co,Los Angeles
+2023-10-18,Purchase,Clothing,785.48,Clothing Co,New York
+2023-10-24,Deposit,Electronics,752.94,Movie Hub,Houston
+2023-10-24,Deposit,Entertainment,792.48,Fresh Market,Los Angeles
+2023-10-31,Purchase,Utilities,562.25,Utility Central,Los Angeles
+2023-11-01,Deposit,Groceries,858.41,Movie Hub,Houston
+2023-11-01,Deposit,Groceries,92.74,Movie Hub,Los Angeles
+2023-11-08,Withdrawal,Groceries,521.43,Utility Central,New York
+2023-11-13,Deposit,Entertainment,868.95,Fresh Market,Houston
+2023-11-13,Withdrawal,Utilities,811.65,Clothing Co,Phoenix
+2023-11-14,Purchase,Utilities,197.08,Clothing Co,Chicago
+2023-11-18,Deposit,Electronics,931.78,Clothing Co,Phoenix
+2023-11-19,Purchase,Groceries,307.53,Utility Central,Houston
+2023-11-24,Deposit,Clothing,859.63,Fresh Market,Los Angeles
+2023-11-28,Purchase,Entertainment,195.02,Clothing Co,Chicago
+2023-11-29,Deposit,Electronics,823.45,Utility Central,Houston
+2023-11-30,Deposit,Groceries,232.17,Movie Hub,Los Angeles
+2023-11-30,Withdrawal,Clothing,829.03,Clothing Co,Houston
+2023-12-04,Withdrawal,Entertainment,87.36,Utility Central,Chicago
+2023-12-05,Withdrawal,Entertainment,932.34,Utility Central,Houston
+2023-12-07,Withdrawal,Entertainment,449.43,Fresh Market,New York
+2023-12-08,Purchase,Utilities,812.47,Movie Hub,Phoenix
+2023-12-10,Deposit,Utilities,244.8,Utility Central,Houston
+2023-12-24,Withdrawal,Utilities,216.95,Tech World,Phoenix
+2023-12-28,Withdrawal,Electronics,229.13,Tech World,Los Angeles
+2024-01-02,Deposit,Utilities,211.72,Movie Hub,Houston
+2024-01-06,Deposit,Entertainment,954.43,Utility Central,Los Angeles
+2024-01-17,Deposit,Entertainment,581.08,Utility Central,New York
+2024-01-17,Deposit,Entertainment,842.32,Movie Hub,Houston
+2024-01-17,Deposit,Electronics,463.99,Fresh Market,Chicago
+2024-01-18,Deposit,Groceries,86.83,Clothing Co,Houston
+2024-01-18,Deposit,Electronics,582.06,Clothing Co,New York
+2024-01-20,Deposit,Electronics,52.28,Utility Central,Los Angeles
+2024-01-21,Deposit,Clothing,517.27,Fresh Market,Los Angeles
+2024-01-22,Purchase,Electronics,538.58,Fresh Market,New York
+2024-01-26,Withdrawal,Groceries,386.71,Tech World,Houston
+2024-02-03,Deposit,Groceries,469.21,Fresh Market,Chicago
+2024-02-03,Deposit,Clothing,646.82,Tech World,Phoenix
+2024-02-03,Withdrawal,Utilities,633.59,Tech World,New York
+2024-02-05,Deposit,Entertainment,81.46,Clothing Co,Chicago
+2024-02-07,Withdrawal,Groceries,222.34,Clothing Co,Chicago
+2024-02-07,Withdrawal,Groceries,379.03,Movie Hub,Phoenix
+2024-02-12,Purchase,Entertainment,384.09,Clothing Co,Los Angeles
+2024-02-13,Deposit,Groceries,828.57,Movie Hub,Los Angeles
+2024-02-15,Deposit,Utilities,981.02,Utility Central,Phoenix
+2024-02-16,Purchase,Groceries,695.36,Fresh Market,Houston
+2024-02-18,Withdrawal,Clothing,306.39,Utility Central,New York
+2024-02-23,Withdrawal,Entertainment,420.52,Clothing Co,Phoenix

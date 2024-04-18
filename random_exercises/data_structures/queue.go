@@ -1,4 +1,4 @@
-package main
+package data_structures
 
 import (
 	"fmt"
@@ -18,7 +18,7 @@ func libraryEnqueue() {
 }
 
 /*
-	Difference between any and interface{}?
+Difference between any and interface{}?
 */
 type Queue struct {
 	items []any
