@@ -18,15 +18,15 @@ func (s *Stack) Pop() string {
 	return popped
 }
 
-type Queue struct {
+type AQueue struct {
 	Store []string
 }
 
-func (q *Queue) Enqueue(element string) {
+func (q *AQueue) Enqueue(element string) {
 	q.Store = append(q.Store, element)
 }
 
-func (q *Queue) Dequeue() string {
+func (q *AQueue) Dequeue() string {
 	if len(q.Store) == 0 {
 		return ""
 	}
