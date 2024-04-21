@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/ablost33/GoLang-Learning/random_exercises/exponential_backoff"
+	api_authentication "github.com/ablost33/GoLang-Learning/random_exercises/api-authentication"
 )
 
 func main() {
-	exponential_backoff.CreateEmployee()
+	in := api_authentication.GetCatRequest{}
+	api_authentication.GetCatImages(in)
 }
