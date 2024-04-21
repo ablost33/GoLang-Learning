@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "releaseYear": "1975"
+  },
+  {
+    "title": "Imagine",
+    "artist": "John Lennon",
+    "releaseYear": "1971"
+  },
+  {
+    "title": "Billie Jean",
+    "artist": "Michael Jackson",
+    "releaseYear": "1982"
+  }
+]
